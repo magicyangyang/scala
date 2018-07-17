@@ -24,10 +24,10 @@
         <environment id="standalone">
             <transactionManager type="JDBC" />
             <dataSource type="UNPOOLED">
-                <property name="driver" value="org.hsqldb.jdbcDriver"/>
-                <property name="url" value="jdbc:hsqldb:mem:scala"/>
-                <property name="username" value="sa"/>
-                <property name="password" value=""/>
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://127.0.0.1/localdb?useUnicode=true&amp;characterEncoding=utf8"/>
+                <property name="username" value="root"/>
+                <property name="password" value="root"/>
             </dataSource>
         </environment>
     </environments>

@@ -72,8 +72,8 @@ object UpdateSample {
 
     db.transaction { implicit session =>
 
-      DBSchema.create
-      DBSampleData.populate      
+//      DBSchema.create
+//      DBSampleData.populate
       
       findPerson(1) match {
         case Some(p) =>

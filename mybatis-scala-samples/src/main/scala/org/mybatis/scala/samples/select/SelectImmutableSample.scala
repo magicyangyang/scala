@@ -56,7 +56,7 @@ object CDB {
     environment(
       id = "default", 
       transactionFactory = new JdbcTransactionFactory(), 
-      dataSource = new PooledDataSource("org.hsqldb.jdbcDriver", "jdbc:hsqldb:mem:scala", "sa", "")
+      dataSource = new PooledDataSource("com.mysql.jdbc.Driver", "jdbc:mysql://127.0.0.1/localdb?useUnicode=true&amp;characterEncoding=utf8", "root", "root")
     )
     // Add the data access methods to default namespace
     statements(findAll)
@@ -78,9 +78,9 @@ object SelectImmutableSample {
   def main(args: Array[String]): Unit = context.transaction { implicit s =>
     
     // Create database and populate it with sample data
-    DBSchema.create
-    DBSampleData.populate
-    
+//    DBSchema.create
+    //    DBSampleData.populate
+    //
     // Query
     findAll("%a%").foreach {
       case CPerson(id, firstName, lastName) =>

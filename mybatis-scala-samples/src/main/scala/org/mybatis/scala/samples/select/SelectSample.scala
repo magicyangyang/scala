@@ -54,10 +54,10 @@ object DB {
       "default", 
       new JdbcTransactionFactory(), 
       new PooledDataSource(
-        "org.hsqldb.jdbcDriver",
-        "jdbc:hsqldb:mem:scala",
-        "sa",
-        ""
+        "com.mysql.jdbc.Driver",
+        "jdbc:mysql://127.0.0.1/localdb?useUnicode=true&amp;characterEncoding=utf8",
+        "root",
+        "root"
       )
     )
   )
@@ -80,8 +80,8 @@ object SelectSample {
   def main(args : Array[String]) : Unit = {
     DB.context.transaction { implicit session =>
 
-      DBSchema.create
-      DBSampleData.populate
+//      DBSchema.create
+//      DBSampleData.populate
 
       DB.findAll("a").foreach { p => 
         println( "Person(%d): %s %s".format(p.id, p.firstName, p.lastName) )

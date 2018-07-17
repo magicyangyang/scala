@@ -73,14 +73,14 @@ object InsertSample {
 
     db.transaction { implicit session =>
 
-      DBSchema.create
-      
+//      DBSchema.create
+
       val g = new Group
-      g.name = "New Group"
+      g.name = "New Group222"
 
       val p = new Person
-      p.firstName = "John"
-      p.lastName = "Smith"
+      p.firstName = "John2222"
+      p.lastName = "Smith22"
       p.group = g
 
       insertGroup(g)

@@ -14,26 +14,24 @@
 --    limitations under the License.
 --
 
-CREATE TABLE people_group (
+CREATE TABLE IF NOT EXISTS people_group (
     id_ serial,
     name_ varchar(255),
     primary key (id_)
 );
 
-CREATE TABLE person (
+CREATE TABLE IF NOT EXISTS person (
     id_ serial,
     first_name_ varchar(255),
     last_name_ varchar(255),
     group_id_ integer not null,
-    primary key (id_),
-    foreign key (group_id_) references people_group(id_)
+    primary key (id_)
 );
 
-CREATE TABLE contact_info (
+CREATE TABLE IF NOT EXISTS contact_info (
     id_ serial,
     owner_id_ integer not null,
     street_address_ varchar(255),
     phone_number_ varchar(20),
-    primary key (id_),
-    foreign key (owner_id_) references person(id_)
+    primary key (id_)
 );

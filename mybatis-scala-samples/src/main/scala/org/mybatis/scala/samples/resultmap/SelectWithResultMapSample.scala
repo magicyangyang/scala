@@ -111,8 +111,8 @@ object SelectWithResultMapSample {
   def main(args : Array[String]) : Unit = {
     Persistence.context.transaction { implicit session =>
 
-      DBSchema.create
-      DBSampleData.populate
+//      DBSchema.create
+//      DBSampleData.populate
       
       for (p <- Persistence.findAll()) {
         println("\nPerson(%d): %s %s is in group: %s".format(p.id, p.firstName, p.lastName, p.group.name))

@@ -33,4 +33,13 @@ trait DatabaseSupport {
       block(session)
     }
   }
+  /**
+    * Executes a callback function provided by a argument of this function within a read-only database transaction.
+    * @param block the callback function to be executed within a database transaction.
+    */
+  def withMaster(db: SessionManager)(block: Session => Unit): Unit = {
+    db.managed{ implicit session =>
+      DatabaseSchema.prepare
+    }
+  }
 }

@@ -18,6 +18,7 @@ Versions
 ![mybatis-logo](http://mybatis.github.io/images/mybatis-logo.png)
 
 MyBatis-Scala adapter for Scala.
+作者支持替换了mysql版本处理方式
 
 Essentials
 ----------

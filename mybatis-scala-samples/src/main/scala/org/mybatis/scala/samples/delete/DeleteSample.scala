@@ -81,9 +81,9 @@ object DeleteSample {
 
     db.transaction { implicit session =>
 
-      DBSchema.create
-      DBSampleData.populate
-      
+//      DBSchema.create
+//      DBSampleData.populate
+
       println("Before =>")
       for (p <- findAll())
         println( "\tPerson(%d): %s %s".format(p.id, p.firstName, p.lastName) )
