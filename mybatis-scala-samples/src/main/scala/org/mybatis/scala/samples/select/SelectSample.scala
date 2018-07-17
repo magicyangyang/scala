@@ -54,8 +54,8 @@ object DB {
       "default", 
       new JdbcTransactionFactory(), 
       new PooledDataSource(
-        "com.mysql.jdbc.Driver",
-        "jdbc:mysql://127.0.0.1/localdb?useUnicode=true&amp;characterEncoding=utf8",
+        "com.mysql.cj.jdbc.Driver",
+        "jdbc:mysql://127.0.0.1/localdb?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false",
         "root",
         "root"
       )

@@ -56,7 +56,7 @@ object CDB {
     environment(
       id = "default", 
       transactionFactory = new JdbcTransactionFactory(), 
-      dataSource = new PooledDataSource("com.mysql.jdbc.Driver", "jdbc:mysql://127.0.0.1/localdb?useUnicode=true&amp;characterEncoding=utf8", "root", "root")
+      dataSource = new PooledDataSource("com.mysql.cj.jdbc.Driver", "jdbc:mysql://127.0.0.1/localdb?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false", "root", "root")
     )
     // Add the data access methods to default namespace
     statements(findAll)
