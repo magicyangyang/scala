@@ -32,7 +32,7 @@ object Resolvers {
 
 object Dependencies {
   val mybatis = "org.mybatis.scala" %% "mybatis-scala-core" % "1.0.3"
-  val hsqldb = "org.hsqldb" % "hsqldb" % "2.3.2"
+  val mysqldb = "mysql" % "mysql-connector-java" % "5.1.36"
   val scalaxml = "org.scala-lang.modules" % "scala-xml_2.11" % "1.0.3"
 }
 
@@ -42,7 +42,7 @@ object MainBuild extends Build {
   import Resolvers._
   import Dependencies._
 
-  val deps = Seq(mybatis, scalaxml, hsqldb)
+  val deps = Seq(mybatis, scalaxml, mysqldb)
   val coreResolvers = Seq(sonatypeSnapshots, sonatype)
 
   lazy val samples = Project(
