@@ -19,8 +19,8 @@ import Keys._
 object BuildSettings {
   val buildSettings = Defaults.defaultSettings ++ Seq (
     organization := "org.mybatis.scala",
-    version      := "1.0.3",
-    scalaVersion := "2.11.6"
+    version      := "1.0.7",
+    scalaVersion := "2.12.2"
   )
   val mybatisVersion = "3.2.8"
 }
@@ -31,9 +31,9 @@ object Resolvers {
 }
 
 object Dependencies {
-  val mybatis = "org.mybatis.scala" %% "mybatis-scala-core" % "1.0.3"
-  val mysqldb = "mysql" % "mysql-connector-java" % "5.1.36"
-  val scalaxml = "org.scala-lang.modules" % "scala-xml_2.11" % "1.0.3"
+  val mybatis = "org.mybatis.scala" %% "mybatis-scala-core" % "1.0.7"
+  val mysqldb = "mysql" % "mysql-connector-java" % "8.0.11"
+  val scalaxml = "org.scala-lang.modules" % "scala-xml_2.11" % "1.0.7"
 }
 
 object MainBuild extends Build {

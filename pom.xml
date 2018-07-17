@@ -27,8 +27,8 @@
   </parent>
 
   <groupId>org.mybatis.scala</groupId>
-  <artifactId>mybatis-scala-parent_2.11</artifactId>
-  <version>1.0.6-SNAPSHOT</version>
+  <artifactId>mybatis-scala-parent_2.12</artifactId>
+  <version>1.0.7-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>mybatis-scala-parent</name>
@@ -43,13 +43,13 @@
 
   <scm>
     <url>http://github.com/mybatis/scala</url>
-    <connection>scm:git:ssh://github.com/mybatis/scala.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/mybatis/scala.git</developerConnection>
+    <connection>scm:git:ssh://github.com/magicyangyang/scala.git</connection>
+    <developerConnection>scm:git:ssh://github.com/magicyangyang/scala.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
   <issueManagement>
     <system>GitHub Issue Management</system>
-    <url>https://github.com/mybatis/scala/issues</url>
+    <url>https://github.com/magicyangyang/scala/issues</url>
   </issueManagement>
   <ciManagement>
     <system>Travis CI</system>
@@ -59,7 +59,7 @@
     <site>
       <id>gh-pages</id>
       <name>Mybatis GitHub Pages</name>
-      <url>git:ssh://git@github.com/mybatis/scala.git?gh-pages#</url>
+      <url>git:ssh://git@github.com/magicyangyang/scala.git?gh-pages#</url>
     </site>
   </distributionManagement>
 
@@ -67,7 +67,7 @@
     <clirr.comparisonVersion>1.0.2</clirr.comparisonVersion>
     <findbugs.onlyAnalyze>org.mybatis.scala.*</findbugs.onlyAnalyze>
     <gcu.product>Scala</gcu.product>
-    <scala.binary>2.11</scala.binary>
+    <scala.binary>2.12</scala.binary>
     <scala.version>${scala.binary}.8</scala.version>
   </properties>
 
