@@ -33,7 +33,7 @@ object Resolvers {
 object Dependencies {
   val mybatis = "org.mybatis.scala" %% "mybatis-scala-core" % "1.0.7"
   val mysqldb = "mysql" % "mysql-connector-java" % "8.0.11"
-  val scalaxml = "org.scala-lang.modules" % "scala-xml_2.11" % "1.0.7"
+  val scalaxml = "org.scala-lang.modules" % "scala-xml_2.12" % "1.1.0"
 }
 
 object MainBuild extends Build {
