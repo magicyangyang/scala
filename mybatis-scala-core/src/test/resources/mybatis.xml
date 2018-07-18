@@ -25,7 +25,7 @@
             <transactionManager type="JDBC" />
             <dataSource type="UNPOOLED">
                 <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://127.0.0.1/localdb?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=true"/>
+                <property name="url" value="jdbc:mysql://127.0.0.1/localdb?useUnicode=true&amp;characterEncoding=utf8"/>
                 <property name="username" value="root"/>
                 <property name="password" value="root"/>
             </dataSource>
